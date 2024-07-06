@@ -11,7 +11,16 @@ const result= arraysAdition(firstAray, secondArray);
 
 expect(result).toBe(21);
 expect(result).toBeTypeOf("number");
+})
 
+it('should return -21 if first array is [-1,-2,-3] and second is [-4,-5,-6]', () => {
+   
+    const firstAray = [-1,-2,-3];
+    const secondAray = [-4,-5,-6];
+    const result= arraysAdition(firstAray, secondAray);
+
+    expect(result).toBe(-21);
+    expect(result).toBeTypeOf("number");
 })
 
 
