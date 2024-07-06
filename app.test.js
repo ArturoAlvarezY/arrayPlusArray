@@ -32,5 +32,12 @@ it('should return 15 if first array is [0,0,0] and second is [4,5,6]', () => {
     expect(result).toBeTypeOf("number");
 })
 
+it('should return 2100 if first array is [100, 200, 300] and second is [400, 500, 600]', () => {
+    const firstAray = [100, 200, 300];
+    const secondAray = [400, 500, 600];
+    const result = arraysAdition(firstAray, secondAray);
 
+    expect(result).toBe(2100);
+    expect(result).toBeTypeOf("number")
+})
 })
